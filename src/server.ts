@@ -4,7 +4,7 @@ const app = express();
 
 const router = Router();
 
-router.get("coucou", (req, res, next) => {
+router.get("/coucou", (req, res, next) => {
   res.status(200).json({
     response: "COUCOU",
   });
