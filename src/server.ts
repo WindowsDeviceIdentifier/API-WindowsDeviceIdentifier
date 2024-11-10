@@ -10,6 +10,8 @@ router.get("coucou", (req, res, next) => {
   });
 });
 
+app.use(router);
+
 app.listen(process.env.PORT ?? 8000, () => {
   console.log(
     `Server started on port: http://localhost:${process.env.PORT ?? 8000}`
