@@ -8,7 +8,10 @@ services:
     ports:
       - "8000:8000"
     environment:
-      PORT: 8000  
+      PORT: 8000
+      AUTH0_AUDIENCE: "https://windows-device-identifier/"
+      AUTH0_ISSUER: "https://dev-6s6s0f4wpurx7gmw.eu.auth0.com/"
+      AUTH0_SIGNING_ALG: "RS256"
     volumes:
       - ./src:/usr/src/app/src
       - /usr/src/app/node_modules
